@@ -1,0 +1,5 @@
+/testProject/src/main/resources/application.yml
+/out/
+/.gradle/
+/.idea/
+/testProject/out/

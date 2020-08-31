@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.harland.testSharding.task.dao.SysUserDao">
+
+    <update id="updateUserInfo">
+        UPDATE SYS_USER SET name = #{name}
+        <if test="null != avatar">
+            ,AVATAR = #{avatar,jdbcType=BLOB}
+        </if>
+        WHERE ID = '1'
+    </update>
+
+</mapper>
